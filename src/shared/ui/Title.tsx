@@ -9,7 +9,7 @@ const titleVariants = cva(
     variants: {
       variant: {
         h1: "text-4xl font-extrabold",
-        h2: "border-b pb-2 text-3xl font-semibold first:mt-0",
+        h2: "text-3xl font-semibold first:mt-0",
         h3: "text-2xl font-semibold",
         h4: "text-xl font-semibold",
       },
