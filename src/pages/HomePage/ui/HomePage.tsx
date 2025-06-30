@@ -5,6 +5,7 @@ import { Text, Title } from "@/src/shared/ui";
 import { Promo } from "@/src/widgets/Promo";
 import { AboutMe } from "@/src/widgets/AboutMe";
 import { TechStack } from "@/src/widgets/TechStack";
+import { MyProjects } from "@/src/widgets/MyProjects";
 
 const HomePage: FC = () => {
   return (
@@ -12,6 +13,8 @@ const HomePage: FC = () => {
       <Promo />
       <AboutMe />
       <TechStack />
+      <MyProjects />
+      
       Hello World! <br /> <br />
       <Button>Button</Button> <br />
       <Title variant="h1">Gosudarev Danila</Title> <br />

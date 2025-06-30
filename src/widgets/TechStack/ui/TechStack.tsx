@@ -77,7 +77,7 @@ const techs = [
     pathIcon: "/icons/tech-stack/antd.svg",
   },
   {
-    name: "TailWind",
+    name: "Tailwind",
     pathIcon: "/icons/tech-stack/tailwindcss.svg",
   },
   {
@@ -134,7 +134,7 @@ export const TechStack: FC<Props> = ({ className }) => {
   return (
     <div className={cn("min-h-screen flex items-center", className)}>
       <Container>
-        <Title className="text-center mb-6">Стек технологий</Title>
+        <Title className="text-center mb-4">Стек технологий</Title>
         <Text variant="lead" className="text-center mb-6">
           Это инструменты и технологии, с которыми я работаю как
           frontend-разработчик, способный охватывать полный цикл разработки. Я

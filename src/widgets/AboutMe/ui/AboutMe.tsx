@@ -9,14 +9,14 @@ interface Props {
 
 export const AboutMe: FC<Props> = ({ className }) => {
   return (
-    <div className={cn("h-screen flex items-center", className)}>
+    <div className={cn("min-h-screen flex items-center", className)}>
       <Container>
-        <Title className="text-center mb-6">Обо мне</Title>
+        <Title className="text-center mb-4">Обо мне</Title>
         <Text variant="lead" className="text-center mb-6">
           Вот немного обо мне и о моём пути как разработчика.
         </Text>
         <Text>
-          Привет! Меня зовут <span className="font-bold">Государев Данила</span>
+          Привет! Меня зовут <span className="font-bold">Данила Государев</span>
           , я frontend-разработчик с трёхлетним опытом. Моё увлечение
           программированием началось ещё в школе и со временем превратилось в
           профессию. Сейчас я учусь на 4 курсе в РосНОУ по направлению
