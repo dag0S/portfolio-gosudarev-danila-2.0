@@ -3,28 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Container } from "@/src/shared/ui";
+import { socials } from "../const/socials";
+import { cn } from "@/src/shared/lib/shadcn";
 
-const socials = [
-  {
-    name: "GitHub",
-    pathIcon: "/icons/socials/gh.svg",
-    link: "https://github.com/dag0S",
-  },
-  {
-    name: "Telegram",
-    pathIcon: "/icons/socials/tg.svg",
-    link: "https://t.me/DanilaGosudarev",
-  },
-  {
-    name: "VKontakte",
-    pathIcon: "/icons/socials/vk.svg",
-    link: "https://vk.com/dag0s",
-  },
-];
+interface Props {
+  className?: string;
+}
 
-export const Header: FC = () => {
+export const Header: FC<Props> = ({ className }) => {
   return (
-    <div className="sticky top-0 z-10 bg-background/80 backdrop-blur-sm border-b">
+    <header
+      className={cn(
+        "sticky top-0 z-10 bg-background/80 backdrop-blur-sm",
+        className
+      )}
+    >
       <Container className="py-4 flex justify-between items-center gap-4">
         <Link href="/">
           <h1 className="font-bold text-2xl">ДАНИЛА ГОСУДАРЕВ</h1>
@@ -50,6 +43,6 @@ export const Header: FC = () => {
           </ul>
         </div>
       </Container>
-    </div>
+    </header>
   );
 };

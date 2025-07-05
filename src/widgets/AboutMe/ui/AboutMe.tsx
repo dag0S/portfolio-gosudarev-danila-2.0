@@ -9,7 +9,7 @@ interface Props {
 
 export const AboutMe: FC<Props> = ({ className }) => {
   return (
-    <div className={cn("min-h-screen flex items-center", className)}>
+    <section className={cn("flex items-center pt-32", className)}>
       <Container>
         <Title className="text-center mb-4">Обо мне</Title>
         <Text variant="lead" className="text-center mb-6">
@@ -36,6 +36,6 @@ export const AboutMe: FC<Props> = ({ className }) => {
           потрясающее!
         </Text>
       </Container>
-    </div>
+    </section>
   );
 };

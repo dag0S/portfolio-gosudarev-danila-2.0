@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 
-import "../../styles/globals.css";
 import { Header } from "@/src/widgets/Header";
+import { Footer } from "@/src/widgets/Footer";
+import { Navigation } from "@/src/widgets/Navigation";
+import { Providers } from "../../providers/Providers";
+
+import "../../styles/globals.css";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -20,10 +24,34 @@ const MainLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="ru">
+    <html lang="ru" suppressHydrationWarning>
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/favicons/site.webmanifest" />
+      </head>
       <body className={`${openSans.variable} antialiased`}>
-        <Header />
-        <main>{children}</main>
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Navigation />
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -27,11 +27,10 @@ export const Promo: FC<Props> = ({ className }) => {
           </Button>
         </div>
         <Image
-          src="/hero-1.jpg"
+          src="/hero.png"
           alt="Государев Данила"
-          width={387}
-          height={387}
-          className="rounded-2xl rotate-9 shadow-accent shadow-2xl"
+          width={400}
+          height={400}
         />
       </Container>
     </section>
