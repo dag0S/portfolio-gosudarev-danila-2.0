@@ -47,10 +47,12 @@ const MainLayout = ({
       </head>
       <body className={`${openSans.variable} antialiased`}>
         <Providers>
-          <Header />
-          <main>{children}</main>
-          <Navigation />
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Navigation />
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

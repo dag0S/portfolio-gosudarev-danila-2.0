@@ -24,7 +24,10 @@ export const ThemeSwitcher: FC<Props> = ({ className }) => {
   };
 
   return (
-    <div className={cn("inline-flex", className)} onClick={handleSwitchTheme}>
+    <div
+      className={cn("inline-flex cursor-pointer", className)}
+      onClick={handleSwitchTheme}
+    >
       <Sun className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       <Moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
     </div>

@@ -12,7 +12,7 @@ export const Navigation: FC = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky bottom-4 left-1/2 -translate-x-1/2 z-15 bg-background/80 backdrop-blur-sm px-5 py-3 border rounded-4xl w-fit mb-14">
+    <nav className="sticky bottom-4 left-1/2 -translate-x-1/2 z-15 bg-background/80 backdrop-blur-sm px-5 py-3 border rounded-4xl w-fit mb-4">
       <ul className="flex items-center gap-4">
         {menuList.map((item) => (
           <li
