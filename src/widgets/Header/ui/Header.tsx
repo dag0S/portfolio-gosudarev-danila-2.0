@@ -20,7 +20,7 @@ export const Header: FC<Props> = ({ className }) => {
     >
       <Container className="py-4 flex justify-between items-center gap-4">
         <Link href="/">
-          <h1 className="font-bold text-2xl">ДАНИЛА ГОСУДАРЕВ</h1>
+          <h1 className="font-bold text-lg sm:text-2xl">ДАНИЛА ГОСУДАРЕВ</h1>
         </Link>
         <div>
           <ul className="flex gap-4">

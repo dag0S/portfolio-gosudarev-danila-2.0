@@ -12,13 +12,16 @@ export const Navigation: FC = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky bottom-4 left-1/2 -translate-x-1/2 z-15 bg-background/80 backdrop-blur-sm px-5 py-3 border rounded-4xl w-fit mb-4">
+    <nav
+      className="sticky bottom-4 left-1/2 -translate-x-1/2 z-15 bg-background/80 backdrop-blur-sm px-5 py-3 border rounded-4xl w-fit mb-4"
+      style={{ marginRight: "-50%" }}
+    >
       <ul className="flex items-center gap-4">
         {menuList.map((item) => (
           <li
             key={item.link}
             className={cn("py-2 transition ease-in-out hover:opacity-80", {
-              "border-b border-foreground": pathname === item.link,
+              "border-b-2 border-foreground": pathname === item.link,
             })}
           >
             <Link href={item.link}>{item.content}</Link>

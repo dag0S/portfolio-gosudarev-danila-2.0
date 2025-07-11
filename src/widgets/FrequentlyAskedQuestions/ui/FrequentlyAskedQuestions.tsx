@@ -23,7 +23,7 @@ export const FrequentlyAskedQuestions: FC<Props> = ({ className }) => {
           Найдите ответы на распространенные вопросы о моей работе, навыках и о
           том, как установить контакт или сотрудничать со мной.
         </Text>
-        <Container variant="md">
+        <Container variant="md" className="px-0 md:px-4">
           <Accordion type="single" collapsible>
             {accordionValue.map((value) => (
               <AccordionItem key={value.id} value={value.id.toString()}>

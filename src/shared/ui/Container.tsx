@@ -8,7 +8,7 @@ interface Props {
   children: ReactNode;
 }
 
-const containerVariants = cva("w-full px-2 mx-auto", {
+const containerVariants = cva("w-full px-4 mx-auto", {
   variants: {
     variant: {
       xl: "xl:max-w-[1024px]",

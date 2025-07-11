@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Github, MoveRight, SquareArrowOutUpRight } from "lucide-react";
 
 import {
   Badge,
@@ -11,7 +12,6 @@ import {
   cn,
 } from "@/src/shared/lib/shadcn";
 import { Container, Text, Title } from "@/src/shared/ui";
-import { Github, MoveRight, SquareArrowOutUpRight } from "lucide-react";
 
 interface Props {
   className?: string;
@@ -33,8 +33,8 @@ export const MyProjects: FC<Props> = ({ className }) => {
             </Button>
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-8">
-          <Card className="pt-0 overflow-hidden transition ease-in-out duration-300 hover:scale-105 hover:border-primary">
+        <div className="grid md:grid-cols-2 gap-8">
+          <Card className="pt-0 overflow-hidden transition ease-in-out duration-300 hover:scale-101 md:hover:scale-105 hover:border-primary">
             <CardHeader className="px-0">
               <Link href="/project/1">
                 <Image
@@ -42,6 +42,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
                   alt="project-1"
                   width={590}
                   height={302}
+                  className="w-full"
                 />
               </Link>
             </CardHeader>
@@ -86,7 +87,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
               </div>
             </CardContent>
           </Card>
-          <Card className="pt-0 overflow-hidden transition ease-in-out duration-300 hover:scale-105 hover:border-primary">
+          <Card className="pt-0 overflow-hidden transition ease-in-out duration-300 hover:scale-101 md:hover:scale-105 hover:border-primary">
             <CardHeader className="px-0">
               <Link href="/project/1">
                 <Image
@@ -94,6 +95,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
                   alt="project-1"
                   width={590}
                   height={302}
+                  className="w-full"
                 />
               </Link>
             </CardHeader>

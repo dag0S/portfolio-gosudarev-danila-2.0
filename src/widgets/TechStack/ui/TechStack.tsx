@@ -29,7 +29,7 @@ export const TechStack: FC<Props> = ({ className }) => {
           интерфейса до логики на серверной части.
         </Text>
         <Card className="max-w-3xl mx-auto">
-          <CardContent className="flex flex-wrap gap-4 items-center">
+          <CardContent className="flex flex-wrap gap-4 items-center justify-center w-fit px-2 md:px-6">
             {techs.map((tech) => (
               <HoverCard key={tech.name}>
                 <HoverCardTrigger>
