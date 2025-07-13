@@ -12,6 +12,7 @@ import {
   cn,
 } from "@/src/shared/lib/shadcn";
 import { Container, Text, Title } from "@/src/shared/ui";
+import { ROUTES } from "@/src/shared/const";
 
 interface Props {
   className?: string;
@@ -27,7 +28,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
         </Text>
         <div className="flex items-center justify-between gap-4 mb-6">
           <Title variant="h3">Мои проекты</Title>
-          <Link href="/projects">
+          <Link href={ROUTES.projects}>
             <Button variant="secondary">
               Все проекты <MoveRight />
             </Button>
@@ -36,7 +37,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="pt-0 overflow-hidden transition ease-in-out duration-300 hover:scale-101 md:hover:scale-105 hover:border-primary">
             <CardHeader className="px-0">
-              <Link href="/project/1">
+              <Link href={ROUTES.project("1")}>
                 <Image
                   src="/project-1.jpg"
                   alt="project-1"
@@ -48,7 +49,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
             </CardHeader>
             <CardContent>
               <Link
-                href="/project/1"
+                href={ROUTES.project("1")}
                 className="inline-block mb-2 transition ease-in-out hover:text-primary hover:underline"
               >
                 <Title variant="h4">Аукцион для стримеров</Title>
@@ -89,7 +90,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
           </Card>
           <Card className="pt-0 overflow-hidden transition ease-in-out duration-300 hover:scale-101 md:hover:scale-105 hover:border-primary">
             <CardHeader className="px-0">
-              <Link href="/project/1">
+              <Link href={ROUTES.project("2")}>
                 <Image
                   src="/project-1.jpg"
                   alt="project-1"
@@ -101,7 +102,7 @@ export const MyProjects: FC<Props> = ({ className }) => {
             </CardHeader>
             <CardContent>
               <Link
-                href="/project/1"
+                href={ROUTES.project("2")}
                 className="inline-block mb-2 transition ease-in-out hover:text-primary hover:underline"
               >
                 <Title variant="h4">Аукцион для стримеров</Title>

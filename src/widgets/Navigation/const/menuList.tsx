@@ -1,20 +1,22 @@
 import { Home } from "lucide-react";
 
+import { ROUTES } from "@/src/shared/const";
+
 export const menuList = [
   {
-    link: "/",
+    link: ROUTES.main,
     content: <Home />,
   },
   {
-    link: "/about-me",
+    link: ROUTES.about_me,
     content: "Обо мне",
   },
   {
-    link: "/projects",
+    link: ROUTES.projects,
     content: "Проекты",
   },
   {
-    link: "/blog",
+    link: ROUTES.blog,
     content: "Блог",
   },
 ];

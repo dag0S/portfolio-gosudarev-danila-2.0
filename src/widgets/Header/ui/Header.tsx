@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Container } from "@/src/shared/ui";
 import { socials } from "../const/socials";
 import { cn } from "@/src/shared/lib/shadcn";
+import { ROUTES } from "@/src/shared/const";
 
 interface Props {
   className?: string;
@@ -19,7 +20,7 @@ export const Header: FC<Props> = ({ className }) => {
       )}
     >
       <Container className="py-4 flex justify-between items-center gap-4">
-        <Link href="/">
+        <Link href={ROUTES.main}>
           <h1 className="font-bold text-lg sm:text-2xl">ДАНИЛА ГОСУДАРЕВ</h1>
         </Link>
         <div>
