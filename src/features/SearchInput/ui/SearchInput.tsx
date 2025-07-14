@@ -10,7 +10,7 @@ interface Props {
 
 export const SearchInput: FC<Props> = ({ className, placeholder }) => {
   return (
-    <div className={cn("w-[500px] mx-auto relative", className)}>
+    <div className={cn("max-w-[500px] mx-auto relative", className)}>
       <Button variant="ghost" size="icon" className="absolute left-0">
         <Search />
       </Button>

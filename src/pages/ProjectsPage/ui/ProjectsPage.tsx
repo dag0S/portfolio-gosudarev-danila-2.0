@@ -1,33 +1,24 @@
 import type { FC } from "react";
 
-import { Container, Text, Title } from "@/src/shared/ui";
-import { SearchInput } from "@/src/features/SearchInput";
+import { Container } from "@/src/shared/ui";
+import { IProject, ProjectList } from "@/src/entities/Project";
+import { ProjectsHead } from "@/src/widgets/ProjectsHead";
 
-const ProjectsPage: FC = () => {
+const fetchProjects = async () => {
+  const data = await fetch("http://localhost:4321/api/projects");
+  const projects = (await data.json()) as IProject[];
+
+  return projects;
+};
+
+const ProjectsPage: FC = async () => {
+  const projects = await fetchProjects();
+
   return (
-    <div>
-      <Container>
-        <div className="text-center pt-12">
-          <Title className="mb-4">Проекты</Title>
-          <Text variant="lead" className="mb-4">
-            Это большинство проектов, над которыми я работал с тех пор, как
-            начал программировать, некоторые из них являются личными,
-            внештатными, для работы, практики или для других ситуаций. Если вы
-            хотите увидеть абсолютно все мои проекты, перейдите на мою страницу
-            на{" "}
-            <a
-              href="https://github.com/dag0S"
-              target="_blank"
-              className="text-primary transition ease-in-out hover:underline hover:opacity-80"
-            >
-              GitHub
-            </a>
-            .
-          </Text>
-          <SearchInput placeholder="Поиск проектов (Технологиям, названию, описанию и т.д.)" />
-        </div>
-      </Container>
-    </div>
+    <Container className="text-center pt-12">
+      <ProjectsHead className="mb-6" />
+      <ProjectList projects={projects} className="mb-6" />
+    </Container>
   );
 };
 

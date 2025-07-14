@@ -19,3 +19,4 @@ export {
   AccordionTrigger,
 } from "./ui/accordion";
 export { Input } from "./ui/input";
+export { Separator } from "./ui/separator";
