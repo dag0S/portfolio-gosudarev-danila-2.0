@@ -1,3 +1,5 @@
+import { ITag } from "../../Tag";
+
 export interface IProject {
   id: string;
   title: string;
@@ -8,11 +10,7 @@ export interface IProject {
   updatedAt: string;
   authorId: string;
   tags: ITag[];
-}
-
-export interface ITag {
-  id: string;
-  name: string;
-  createdAt: string;
-  updatedAt: string;
+  linkLiveDemo?: string;
+  linkFrontendCode?: string;
+  linkBackendCode?: string;
 }
