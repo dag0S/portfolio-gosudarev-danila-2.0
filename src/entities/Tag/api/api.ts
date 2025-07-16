@@ -1,15 +1,30 @@
 import { IProject } from "../../Project";
 
-export const fetchProjects = async () => {
-  const data = await fetch("http://localhost:4321/api/projects");
-  const projects = (await data.json()) as IProject[];
+export const fetchProjects = async ({
+  searchBy,
+}: {
+  searchBy?: string;
+}): Promise<IProject[]> => {
+  try {
+    const res = await fetch(
+      `http://localhost:4321/api/projects?searchBy=${searchBy}`
+    );
 
-  return projects;
+    if (!res.ok) {
+      throw new Error("Ошибка при загрузке книг");
+    }
+
+    return await res.json();
+  } catch (err) {
+    console.error(err);
+    throw new Error("Не удалось получить книги");
+  }
 };
 
-export const fetchProjectById = async (projectId: string) => {
-  const data = await fetch(`http://localhost:4321/api/projects/${projectId}`);
-  const project = (await data.json()) as IProject;
+export const fetchProjectById = async (
+  projectId: string
+): Promise<IProject> => {
+  const res = await fetch(`http://localhost:4321/api/projects/${projectId}`);
 
-  return project;
+  return await res.json();
 };

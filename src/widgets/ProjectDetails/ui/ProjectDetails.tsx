@@ -13,6 +13,9 @@ interface Props {
 }
 
 export const ProjectDetails: FC<Props> = ({ project }) => {
+  const date = new Date(project.createdAt);
+  const formatter = new Intl.DateTimeFormat("ru");
+
   return (
     <Container variant="md" className="mb-6 pt-2">
       <ProjectNavigation />
@@ -31,7 +34,7 @@ export const ProjectDetails: FC<Props> = ({ project }) => {
             <Text variant="muted" className="flex items-center gap-2">
               <Eye /> {project.views}
             </Text>
-            <Text variant="muted">{project.createdAt}</Text>
+            <Text variant="muted">{formatter.format(date)}</Text>
           </div>
         </div>
         <LinksToProjects

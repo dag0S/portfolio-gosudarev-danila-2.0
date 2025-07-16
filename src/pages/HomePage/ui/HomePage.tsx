@@ -6,7 +6,7 @@ import { TechStack } from "@/src/widgets/TechStack";
 import { MyProjects } from "@/src/widgets/MyProjects";
 import { FrequentlyAskedQuestions } from "@/src/widgets/FrequentlyAskedQuestions";
 
-const HomePage: FC = () => {
+const HomePage: FC = async () => {
   return (
     <>
       <Promo />
