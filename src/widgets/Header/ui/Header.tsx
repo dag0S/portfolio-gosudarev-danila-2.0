@@ -1,6 +1,9 @@
+"use client";
+
 import type { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 import { Container } from "@/src/shared/ui";
 import { socials } from "../const/socials";
@@ -12,6 +15,8 @@ interface Props {
 }
 
 export const Header: FC<Props> = ({ className }) => {
+  const { theme } = useTheme();
+
   return (
     <header
       className={cn(
@@ -33,7 +38,9 @@ export const Header: FC<Props> = ({ className }) => {
                   className="transition delay-100 duration-300 ease-in-out hover:opacity-70"
                 >
                   <Image
-                    src={social.pathIcon}
+                    src={
+                      theme === "light" ? social.pathIcon : social.pathIconDark
+                    }
                     alt={social.name}
                     width={24}
                     height={24}

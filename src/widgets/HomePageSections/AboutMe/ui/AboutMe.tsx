@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import { Container, Text, Title } from "@/src/shared/ui";
+import { Container, SectionWithAnimation, Text, Title } from "@/src/shared/ui";
 import { cn } from "@/src/shared/lib/shadcn";
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 
 export const AboutMe: FC<Props> = ({ className }) => {
   return (
-    <section className={cn("flex items-center pt-32", className)}>
+    <SectionWithAnimation className={cn("flex items-center pt-32", className)}>
       <Container>
         <Title className="text-center mb-4">Обо мне</Title>
         <Text variant="lead" className="text-center mb-6">
@@ -36,6 +36,6 @@ export const AboutMe: FC<Props> = ({ className }) => {
           потрясающее!
         </Text>
       </Container>
-    </section>
+    </SectionWithAnimation>
   );
 };

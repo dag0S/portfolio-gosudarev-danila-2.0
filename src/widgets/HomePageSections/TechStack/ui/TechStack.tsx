@@ -9,7 +9,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/src/shared/lib/shadcn";
-import { Container, Text, Title } from "@/src/shared/ui";
+import { Container, SectionWithAnimation, Text, Title } from "@/src/shared/ui";
 import { techs } from "../const/techs";
 
 interface Props {
@@ -18,7 +18,7 @@ interface Props {
 
 export const TechStack: FC<Props> = ({ className }) => {
   return (
-    <section className={cn("flex items-center pt-32", className)}>
+    <SectionWithAnimation className={cn("flex items-center pt-32", className)}>
       <Container>
         <Title className="text-center mb-4">Стек технологий</Title>
         <Text variant="lead" className="text-center mb-6">
@@ -50,6 +50,6 @@ export const TechStack: FC<Props> = ({ className }) => {
           </CardContent>
         </Card>
       </Container>
-    </section>
+    </SectionWithAnimation>
   );
 };

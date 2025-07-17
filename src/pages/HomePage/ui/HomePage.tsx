@@ -1,12 +1,14 @@
 import type { FC } from "react";
 
-import { Promo } from "@/src/widgets/Promo";
-import { AboutMe } from "@/src/widgets/AboutMe";
-import { TechStack } from "@/src/widgets/TechStack";
-import { MyProjects } from "@/src/widgets/MyProjects";
-import { FrequentlyAskedQuestions } from "@/src/widgets/FrequentlyAskedQuestions";
+import {
+  AboutMe,
+  FrequentlyAskedQuestions,
+  MyProjects,
+  Promo,
+  TechStack,
+} from "@/src/widgets/HomePageSections";
 
-const HomePage: FC = async () => {
+const HomePage: FC = () => {
   return (
     <>
       <Promo />

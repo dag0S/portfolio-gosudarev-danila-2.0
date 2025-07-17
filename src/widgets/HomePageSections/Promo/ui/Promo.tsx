@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Phone } from "lucide-react";
 
 import { Button, cn } from "@/src/shared/lib/shadcn";
-import { Container } from "@/src/shared/ui";
+import { Container, SectionWithAnimation } from "@/src/shared/ui";
 
 interface Props {
   className?: string;
@@ -11,7 +11,7 @@ interface Props {
 
 export const Promo: FC<Props> = ({ className }) => {
   return (
-    <section className={cn("min-h-[calc(100vh-64px)] flex", className)}>
+    <SectionWithAnimation className={cn("min-h-[calc(100vh-64px)] flex", className)}>
       <Container className="flex flex-col-reverse justify-center gap-8 md:gap-4 md:flex-row md:justify-between items-center">
         <div className="w-4/5 text-center md:w-1/2 md:text-left">
           <div className="text-2xl">Привет! 👋 Меня зовут</div>
@@ -34,6 +34,6 @@ export const Promo: FC<Props> = ({ className }) => {
           className="w-4/5 sm:w-fit"
         />
       </Container>
-    </section>
+    </SectionWithAnimation>
   );
 };

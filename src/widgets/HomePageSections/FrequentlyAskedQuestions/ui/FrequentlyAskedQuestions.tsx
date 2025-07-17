@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import { Container, Text, Title } from "@/src/shared/ui";
+import { Container, SectionWithAnimation, Text, Title } from "@/src/shared/ui";
 import {
   Accordion,
   AccordionContent,
@@ -16,7 +16,9 @@ interface Props {
 
 export const FrequentlyAskedQuestions: FC<Props> = ({ className }) => {
   return (
-    <section className={cn("flex items-center pt-32 pb-14", className)}>
+    <SectionWithAnimation
+      className={cn("flex items-center pt-32 pb-14", className)}
+    >
       <Container>
         <Title className="text-center mb-4">Часто задаваемые вопросы</Title>
         <Text variant="lead" className="text-center mb-6">
@@ -34,6 +36,6 @@ export const FrequentlyAskedQuestions: FC<Props> = ({ className }) => {
           </Accordion>
         </Container>
       </Container>
-    </section>
+    </SectionWithAnimation>
   );
 };
