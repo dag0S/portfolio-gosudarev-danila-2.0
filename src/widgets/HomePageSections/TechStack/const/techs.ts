@@ -32,12 +32,20 @@ export const techs = [
     pathIcon: "/icons/tech-stack/ps.svg",
   },
   {
-    name: "NodeJS",
-    pathIcon: "/icons/tech-stack/nodejs.svg",
+    name: "NestJS",
+    pathIcon: "/icons/tech-stack/nestjs.svg",
   },
   {
     name: "ExpressJS",
     pathIcon: "/icons/tech-stack/expressjs.svg",
+  },
+  {
+    name: "NodeJS",
+    pathIcon: "/icons/tech-stack/nodejs.svg",
+  },
+  {
+    name: "Prisma ORM",
+    pathIcon: "/icons/tech-stack/prisma.svg",
   },
   {
     name: "Docker",
@@ -64,6 +72,10 @@ export const techs = [
     pathIcon: "/icons/tech-stack/antd.svg",
   },
   {
+    name: "shadcn",
+    pathIcon: "/icons/tech-stack/shadcn.svg",
+  },
+  {
     name: "Tailwind",
     pathIcon: "/icons/tech-stack/tailwindcss.svg",
   },
@@ -76,12 +88,20 @@ export const techs = [
     pathIcon: "/icons/tech-stack/redux.svg",
   },
   {
+    name: "Zustand",
+    pathIcon: "/icons/tech-stack/zustand.svg",
+  },
+  {
     name: "React Router dom",
     pathIcon: "/icons/tech-stack/reactrouter.svg",
   },
   {
-    name: "React Query",
+    name: "React Query | TanStack Query",
     pathIcon: "/icons/tech-stack/reactquery.svg",
+  },
+  {
+    name: "Framer Motion",
+    pathIcon: "/icons/tech-stack/framer.svg",
   },
   {
     name: "Jest",
@@ -100,8 +120,20 @@ export const techs = [
     pathIcon: "/icons/tech-stack/prettier.svg",
   },
   {
+    name: "ЮKassa",
+    pathIcon: "/icons/tech-stack/yookassa.svg",
+  },
+  {
     name: "PostgreSQL",
     pathIcon: "/icons/tech-stack/postgresql.svg",
+  },
+  {
+    name: "Linux",
+    pathIcon: "/icons/tech-stack/linux.svg",
+  },
+  {
+    name: "Insomnia",
+    pathIcon: "/icons/tech-stack/insomnia.svg",
   },
   {
     name: "Git",

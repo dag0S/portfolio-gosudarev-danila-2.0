@@ -5,16 +5,12 @@ import { MoveRight } from "lucide-react";
 import { Button, cn } from "@/src/shared/lib/shadcn";
 import { Container, SectionWithAnimation, Text, Title } from "@/src/shared/ui";
 import { ROUTES } from "@/src/shared/const";
-import { fetchProjects } from "@/src/entities/Tag";
-import { ProjectCard } from "@/src/entities/Project";
 
 interface Props {
   className?: string;
 }
 
-export const MyProjects: FC<Props> = async ({ className }) => {
-  const projects = (await fetchProjects({ searchBy: "" })).slice(0, 2);
-
+export const MyProjects: FC<Props> = ({ className }) => {
   return (
     <SectionWithAnimation className={cn("flex items-center pt-32", className)}>
       <Container>
@@ -30,12 +26,7 @@ export const MyProjects: FC<Props> = async ({ className }) => {
             </Button>
           </Link>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.length > 0 &&
-            projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-        </div>
+        <div className="grid md:grid-cols-2 gap-8">{/* <ProjectCard/> */}</div>
       </Container>
     </SectionWithAnimation>
   );
