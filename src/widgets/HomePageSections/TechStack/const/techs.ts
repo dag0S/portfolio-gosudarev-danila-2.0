@@ -64,6 +64,10 @@ export const techs = [
     pathIcon: "/icons/tech-stack/gulp.svg",
   },
   {
+    name: "React Hook Form",
+    pathIcon: "/icons/tech-stack/react-hook-form.svg",
+  },
+  {
     name: "Zod",
     pathIcon: "/icons/tech-stack/zod.svg",
   },
@@ -100,6 +104,10 @@ export const techs = [
     pathIcon: "/icons/tech-stack/reactquery.svg",
   },
   {
+    name: "Axios",
+    pathIcon: "/icons/tech-stack/axios.svg",
+  },
+  {
     name: "Framer Motion",
     pathIcon: "/icons/tech-stack/framer.svg",
   },
@@ -118,6 +126,10 @@ export const techs = [
   {
     name: "Prettier",
     pathIcon: "/icons/tech-stack/prettier.svg",
+  },
+  {
+    name: "JWT",
+    pathIcon: "/icons/tech-stack/jwt.svg",
   },
   {
     name: "ЮKassa",

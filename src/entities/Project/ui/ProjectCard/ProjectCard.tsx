@@ -13,7 +13,7 @@ import {
   CardContent,
   CardHeader,
 } from "@/src/shared/lib/shadcn";
-import { IProject } from "../../model/types";
+import type { IProject } from "../../model/types";
 
 interface Props {
   project: IProject;
@@ -29,9 +29,9 @@ export const ProjectCard: FC<Props> = ({ project }) => {
     >
       <Card className="pt-0 text-left overflow-hidden transition ease-in-out duration-300 hover:scale-101 md:hover:scale-105 hover:border-primary">
         <CardHeader className="px-0">
-          <Link href={ROUTES.project("1")}>
+          <Link href={ROUTES.project(project.id)}>
             <Image
-              src={`http://localhost:4321/${project.imageURL}`}
+              src={project.imagesURL[0]}
               alt={project.title}
               width={590}
               height={302}
@@ -46,34 +46,43 @@ export const ProjectCard: FC<Props> = ({ project }) => {
           >
             <Title variant="h4">{project.title}</Title>
           </Link>
-          <div className="flex flex-wrap gap-2 mb-2">
+          <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.length > 0 &&
-              project.tags.map((tag) => (
-                <Badge variant="outline" key={tag.id}>
-                  {tag.name}
+              project.tags.slice(0, 4).map((tag, index) => (
+                <Badge variant="outline" key={index}>
+                  {tag}
                 </Badge>
               ))}
+            <Badge variant="outline">И другие</Badge>
           </div>
-          <Text variant="small" className="text-ellipsis line-clamp-2">
+          <Text
+            variant="small"
+            className="text-muted-foreground text-ellipsis line-clamp-2 mb-4"
+          >
             {project.description}
           </Text>
-          <div className="pt-2 flex gap-2">
-            <a
-              href="https://auction-for-streamers.netlify.app/ru"
-              target="_blank"
-            >
-              <Button variant="ghost" size="sm">
-                Demo <SquareArrowOutUpRight />
-              </Button>
-            </a>
-            <a
-              href="https://github.com/dag0S/auction-for-streamers"
-              target="_blank"
-            >
-              <Button variant="ghost" size="sm">
-                frontend <Github />
-              </Button>
-            </a>
+          <div className="flex justify-center gap-2">
+            {project.linkLiveDemo && (
+              <a href={project.linkLiveDemo} target="_blank">
+                <Button variant="ghost" size="sm">
+                  Demo <SquareArrowOutUpRight />
+                </Button>
+              </a>
+            )}
+            {project.linkFrontendCode && (
+              <a href={project.linkFrontendCode} target="_blank">
+                <Button variant="ghost" size="sm">
+                  frontend <Github />
+                </Button>
+              </a>
+            )}
+            {project.linkBackendCode && (
+              <a href={project.linkBackendCode} target="_blank">
+                <Button variant="ghost" size="sm">
+                  backend <Github />
+                </Button>
+              </a>
+            )}
           </div>
         </CardContent>
       </Card>

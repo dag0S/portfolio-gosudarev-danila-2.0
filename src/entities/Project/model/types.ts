@@ -1,15 +1,10 @@
-import { ITag } from "../../Tag";
-
 export interface IProject {
-  id: string;
+  id: number;
   title: string;
   description: string;
-  imageURL: string;
-  views: number;
-  createdAt: string;
-  updatedAt: string;
-  authorId: string;
-  tags: ITag[];
+  functional: string[];
+  imagesURL: string[];
+  tags: string[];
   linkLiveDemo?: string;
   linkFrontendCode?: string;
   linkBackendCode?: string;

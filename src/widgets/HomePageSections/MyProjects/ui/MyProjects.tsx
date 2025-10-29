@@ -4,7 +4,8 @@ import { MoveRight } from "lucide-react";
 
 import { Button, cn } from "@/src/shared/lib/shadcn";
 import { Container, SectionWithAnimation, Text, Title } from "@/src/shared/ui";
-import { ROUTES } from "@/src/shared/const";
+import { PROJECTS, ROUTES } from "@/src/shared/const";
+import { ProjectCard } from "@/src/entities/Project";
 
 interface Props {
   className?: string;
@@ -26,7 +27,11 @@ export const MyProjects: FC<Props> = ({ className }) => {
             </Button>
           </Link>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">{/* <ProjectCard/> */}</div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {PROJECTS.slice(0, 2).map((project) => (
+            <ProjectCard project={project} key={project.id} />
+          ))}
+        </div>
       </Container>
     </SectionWithAnimation>
   );

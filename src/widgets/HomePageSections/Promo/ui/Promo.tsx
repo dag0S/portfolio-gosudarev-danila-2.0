@@ -29,7 +29,7 @@ export const Promo: FC<Props> = ({ className }) => {
           </Button>
         </div>
         <Image
-          src="/hero-1.png"
+          src="/images/hero.png"
           alt="Государев Данила"
           width={400}
           height={400}
