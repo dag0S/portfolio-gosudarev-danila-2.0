@@ -16,7 +16,7 @@ export const menuList = [
     content: "Проекты",
   },
   {
-    link: ROUTES.blog,
-    content: "Блог",
+    link: ROUTES.contacts,
+    content: "Контакты",
   },
 ];

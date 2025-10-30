@@ -27,7 +27,7 @@ export const ProjectCard: FC<Props> = ({ project }) => {
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ amount: 0.3, once: true }}
     >
-      <Card className="pt-0 text-left overflow-hidden transition ease-in-out duration-300 hover:scale-101 md:hover:scale-105 hover:border-primary">
+      <Card className="pt-0 text-left overflow-hidden transition ease-in-out duration-300 hover:scale-101 md:hover:scale-105">
         <CardHeader className="px-0">
           <Link href={ROUTES.project(project.id)}>
             <Image

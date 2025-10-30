@@ -3,6 +3,6 @@ export const ROUTES = {
   about_me: "/about-me",
   projects: "/projects",
   project: (projectId: number) => `/projects/${projectId}`,
-  blog: "/blog",
+  contacts: "/contacts",
   not_found: "/not-found",
 } as const;

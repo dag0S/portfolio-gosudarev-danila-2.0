@@ -5,7 +5,7 @@ import { Container, Text, Title } from "@/src/shared/ui";
 const AboutMePage: FC = () => {
   return (
     <Container className="pt-12">
-      <Title className="text-center mb-4">Краткое введение: Кто я такой?</Title>
+      <Title className="text-center mb-4">Обо мне</Title>
       <Text>
         Меня зовут <span className="font-bold">Данила Государев</span>, я
         frontend-разработчик с трёхлетним опытом. Моё увлечение

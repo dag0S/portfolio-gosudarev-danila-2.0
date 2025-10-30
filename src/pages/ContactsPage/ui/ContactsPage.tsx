@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
-const BlogPage: FC = () => {
+const ContactsPage: FC = () => {
   return <div>Блог</div>;
 };
 
-export default BlogPage;
+export default ContactsPage;
