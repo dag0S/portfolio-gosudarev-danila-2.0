@@ -96,7 +96,7 @@ export const techs = [
     pathIcon: "/icons/tech-stack/zustand.svg",
   },
   {
-    name: "React Router dom",
+    name: "React Router Dom",
     pathIcon: "/icons/tech-stack/reactrouter.svg",
   },
   {
