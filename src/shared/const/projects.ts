@@ -273,4 +273,126 @@ export const PROJECTS = [
     ],
     linkFrontendCode: "https://github.com/dag0S/tech_wave_frontend",
   },
+  {
+    id: 7,
+    title: "TASK-1 SPA",
+    description:
+      "Приложение для отображения и взаимодействия с данными из JSONPlaceholder, реализованное с использованием современных технологий фронтенда. Пользователь может просматривать пользователей, посты, альбомы с фотографиями, а также осуществлять поиск и переключение тем.",
+    functional: [
+      "Смена темы (Светлая/Темная);",
+      "Просмотра подробной информации;",
+      "Бесконечной прокрутки и пагинации;",
+      "Поиск и фильтрация информации;",
+      "UI на базе Ant Design;",
+      "Адаптивная верстка под мобильные устройства.",
+    ],
+    imagesURL: [
+      "/images/projects/task-1/home.png",
+      "/images/projects/task-1/posts-table.png",
+      "/images/projects/task-1/post.png",
+      "/images/projects/task-1/users-card.png",
+      "/images/projects/task-1/users-table.png",
+      "/images/projects/task-1/albums.png",
+      "/images/projects/task-1/404.png",
+    ],
+    tags: [
+      "React",
+      "TypeScript",
+      "Ant Design",
+      "Redux Toolkit",
+      "Axios",
+      "React Router Dom",
+      "Vite",
+      "ESLint",
+      "Prettier",
+    ],
+    linkFrontendCode: "https://github.com/dag0S/tech_wave_frontend",
+  },
+  {
+    id: 8,
+    title: "Voice Tag Lab",
+    description:
+      "Войс тэг - это незаменимая вещь для каждого битмейкера. И наша команда готова изготовить его именно для тебя. Выбирай любой из наших голосов, и выделяйся!",
+    functional: ["Адаптивная верстка под мобильные устройства."],
+    imagesURL: [
+      "/images/projects/voice-tag-lab/home-min.png",
+      "/images/projects/voice-tag-lab/home-full.png",
+      "/images/projects/voice-tag-lab/modal.png",
+    ],
+    tags: ["HTML", "CSS", "SASS", "Vite", "JavaScript"],
+    linkFrontendCode: "https://github.com/dag0S/voice-tag-lab",
+    linkLiveDemo: "https://warm-seahorse-f0148f.netlify.app/",
+  },
+  {
+    id: 9,
+    title: "Lamborghini",
+    description:
+      "Итальянская компания, производитель спортивных автомобилей под маркой Lamborghini. Данный лендинг информирует о гранд-финале гонок.",
+    functional: ["Адаптивная верстка под мобильные устройства."],
+    imagesURL: [
+      "/images/projects/lambo/home.png",
+      "/images/projects/lambo/home-full.png",
+    ],
+    tags: ["HTML", "CSS", "SASS", "Gulp"],
+    linkFrontendCode: "https://github.com/dag0S/Lamborghini/tree/master",
+    linkLiveDemo: "https://lamborghini-demo.netlify.app/",
+  },
+  {
+    id: 10,
+    title: "Oculus",
+    description:
+      "Oculus - это очки виртуальной реальности будущего. Данный страница рекламирует данный продукт.",
+    functional: ["Адаптивная верстка под мобильные устройства."],
+    imagesURL: [
+      "/images/projects/oculus/home.png",
+      "/images/projects/oculus/home-full.png",
+    ],
+    tags: ["HTML", "CSS", "SASS", "Gulp"],
+    linkFrontendCode: "https://github.com/dag0S/Oculus",
+    linkLiveDemo: "https://oculus-demo-1-0-1.netlify.app/",
+  },
+  {
+    id: 11,
+    title: "HooBank",
+    description:
+      "HooBank – инновационный банк. На этом лендинге мы рассказываем о возможностях и фичах этого банка. Сайт создан с использованием React и библиотеки стилей Tailwind.",
+    functional: ["Адаптивная верстка под мобильные устройства."],
+    imagesURL: [
+      "/images/projects/hoo-bank/home.png",
+      "/images/projects/hoo-bank/home-full.png",
+    ],
+    tags: ["Tailwind", "React", "Vite", "ESLint", "Prettier"],
+    linkFrontendCode: "https://github.com/dag0S/HooBank",
+    linkLiveDemo: "https://genuine-griffin-680248.netlify.app/",
+  },
+  {
+    id: 12,
+    title: "LoftHouse",
+    description:
+      "LoftHouse – это жилой комплекс, расположенный в историческом центре города. Данный одностраничный сайт призван познакомить вас со всеми преимуществами этого места.",
+    functional: ["Адаптивная верстка под мобильные устройства."],
+    imagesURL: [
+      "/images/projects/loft-house/home.png",
+      "/images/projects/loft-house/home-full.png",
+    ],
+    tags: ["HTML", "CSS", "Gulp", "SASS"],
+    linkFrontendCode: "https://github.com/dag0S/loft-house",
+    linkLiveDemo: "https://loft-house-demo.netlify.app/",
+  },
+  {
+    id: 13,
+    title: "D&M Leasing",
+    description:
+      "D&M Leasing – сайт по приобретению автомобилей, который состоит из нескольких страниц, написанных на чистом HTML и CSS.",
+    functional: ["Адаптивная верстка под мобильные устройства."],
+    imagesURL: [
+      "/images/projects/dm/home.png",
+      "/images/projects/dm/home-full.png",
+      "/images/projects/dm/cars.png",
+      "/images/projects/dm/contacts.png",
+    ],
+    tags: ["HTML", "CSS", "Gulp", "SASS", "JavaScript"],
+    linkFrontendCode: "https://github.com/dag0S/Cars",
+    linkLiveDemo: "https://cars-demo-1-0-1.netlify.app/",
+  },
 ];

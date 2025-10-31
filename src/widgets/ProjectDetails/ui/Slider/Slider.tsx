@@ -58,7 +58,7 @@ export const Slider: FC<Props> = ({ project }) => {
               width={180}
               height={90}
               alt={`${project.title} картинка #${index}`}
-              className="w-full mb-4 rounded cursor-pointer"
+              className="w-full mb-4 rounded cursor-pointer max-w-[180px] max-h-[90px] object-cover object-top"
             />
           </SwiperSlide>
         ))}
