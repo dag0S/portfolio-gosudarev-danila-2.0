@@ -5,7 +5,6 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Search, X } from "lucide-react";
 
 import { Button, cn, Input } from "@/src/shared/lib/shadcn";
-import { useDebounceCallback } from "@/src/shared/hooks";
 
 interface Props {
   className?: string;
@@ -24,7 +23,7 @@ export const SearchInput: FC<Props> = ({ className, placeholder }) => {
     setSearchValue(currentSearchBy);
   }, []);
 
-  const handleSearch = useDebounceCallback((value: string) => {
+  const handleSearch = (value: string) => {
     const params = new URLSearchParams(searchParams?.toString());
 
     if (value) {
@@ -34,7 +33,7 @@ export const SearchInput: FC<Props> = ({ className, placeholder }) => {
     }
 
     router.replace(`${pathname}?${params.toString()}`);
-  }, 1000);
+  };
 
   const handleSetSearch = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;

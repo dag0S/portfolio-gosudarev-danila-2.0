@@ -1,4 +1,6 @@
-export const PROJECTS = [
+import type { IProject } from "@/src/entities/Project";
+
+export const PROJECTS: IProject[] = [
   {
     id: 1,
     title: "LibSpace (Онлайн библиотека)",

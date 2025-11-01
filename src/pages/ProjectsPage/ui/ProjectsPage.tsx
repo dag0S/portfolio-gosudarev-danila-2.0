@@ -10,11 +10,24 @@ const ProjectsPage: FC<{
 }> = async ({ searchParams }) => {
   const searchBy = ((await searchParams)?.searchBy as string) || "";
 
+  const filteredProjects = searchBy
+    ? PROJECTS.filter(
+        (project) =>
+          project.title.toLowerCase().includes(searchBy.toLowerCase().trim()) ||
+          project.description
+            .toLowerCase()
+            .includes(searchBy.toLowerCase().trim()) ||
+          project.tags.some((tag) =>
+            tag.toLowerCase().includes(searchBy.toLowerCase().trim())
+          )
+      )
+    : PROJECTS;
+
   return (
     <Container className="text-center pt-12">
       <ProjectsHead className="mb-6" />
       <Suspense fallback={<div className="h-[700px] w-[200px] bg-amber-400" />}>
-        <ProjectList projects={PROJECTS} className="mb-6" />
+        <ProjectList projects={filteredProjects} className="mb-6" />
       </Suspense>
     </Container>
   );

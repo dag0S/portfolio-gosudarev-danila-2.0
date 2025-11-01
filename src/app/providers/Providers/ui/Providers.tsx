@@ -1,4 +1,5 @@
 import type { FC, ReactNode } from "react";
+import NextTopLoader from "nextjs-toploader";
 
 import { ThemeProvider } from "../../ThemeProvider";
 
@@ -14,6 +15,7 @@ export const Providers: FC<Props> = ({ children }) => {
       enableSystem
       disableTransitionOnChange
     >
+      <NextTopLoader showSpinner={false} />
       {children}
     </ThemeProvider>
   );
