@@ -1,1 +1,1 @@
-export { default as ProjectsPage } from "./ui/ProjectsPage";
+export { metadata, default as ProjectsPage } from "./ui/ProjectsPage";

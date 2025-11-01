@@ -1,15 +1,16 @@
+import { SITE_DESCRIPTION } from "@/src/shared/const";
+
 export const accordionValue = [
   {
     id: 1,
     question: "Кто вы?",
-    answer:
-      "Найдите ответы на распространенные вопросы о моей работе, навыках и о том, как установить контакт или сотрудничать со мной.",
+    answer: SITE_DESCRIPTION,
   },
   {
     id: 2,
     question: "Какие технологии вы используете в работе?",
     answer:
-      "Я работаю с современным стеком для frontend-разработки: React,Next.js, TypeScript, Redux Toolkit, Zustand, React Router и другие. Также знаком с backend-технологиями — Node.js, Express ибазами данных. Использую Git, GitHub и придерживаюсь лучших практик в написании кода и организации проектов.",
+      "Я работаю с современным стеком для frontend-разработки: React, Next.js, TypeScript, Redux Toolkit, Zustand, React Router и другие. Также знаком с backend-технологиями — Node.js, Express, NestJS и базами данных. Использую Git, GitHub и придерживаюсь лучших практик в написании кода и организации проектов.",
   },
   {
     id: 3,

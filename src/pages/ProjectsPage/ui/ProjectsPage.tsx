@@ -1,9 +1,14 @@
 import { Suspense, type FC } from "react";
+import type { Metadata } from "next";
 
 import { Container } from "@/src/shared/ui";
 import { ProjectList } from "@/src/entities/Project";
 import { ProjectsHead } from "@/src/widgets/ProjectsHead";
 import { PROJECTS } from "@/src/shared/const";
+
+export const metadata: Metadata = {
+  title: "Проекты",
+};
 
 const ProjectsPage: FC<{
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;

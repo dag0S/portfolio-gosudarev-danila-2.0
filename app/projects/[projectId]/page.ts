@@ -1,1 +1,4 @@
-export { ProjectPage as default } from "@/src/pages/ProjectPage";
+export {
+  generateMetadata,
+  ProjectPage as default,
+} from "@/src/pages/ProjectPage";

@@ -1,1 +1,1 @@
-export { default as AboutMePage } from "./ui/AboutMePage";
+export { metadata, default as AboutMePage } from "./ui/AboutMePage";

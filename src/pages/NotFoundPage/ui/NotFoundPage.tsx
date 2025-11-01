@@ -1,9 +1,14 @@
 import type { FC } from "react";
+import Link from "next/link";
+import type { Metadata } from "next";
 
 import { Container, Text, Title } from "@/src/shared/ui";
 import { Separator } from "@/src/shared/lib/shadcn";
-import Link from "next/link";
 import { ROUTES } from "@/src/shared/const";
+
+export const metadata: Metadata = {
+  title: "Страница не найдена",
+};
 
 const NotFoundPage: FC = () => {
   return (

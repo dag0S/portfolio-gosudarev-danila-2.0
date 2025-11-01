@@ -1,1 +1,1 @@
-export { default as ProjectPage } from "./ui/ProjectPage";
+export { generateMetadata, default as ProjectPage } from "./ui/ProjectPage";
