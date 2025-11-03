@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Портфолио 2.0
 
-## Getting Started
+> Вторая версия моего сайта-портфолио, выполненная на NextJS, React, TypeScript и Framer Motion. На сайте вы можете детально ознакомиться с проектами, с которыми я работал.
 
-First, run the development server:
+![Preview Screenshot](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/home.png)
+
+---
+
+## Демо
+
+🔗 **Demo:** null
+
+---
+
+## Стек технологий
+
+**Next.js 15** | **TypeScript** | **Tailwind CSS** | **ShadCN/UI** | **Framer Motion** | **ESLint + Prettier**
+
+---
+
+## Функционал
+
+- Просмотр и фильтрация информации;
+- Адаптивная верстка под мобильные устройства;
+- Оптимизация производительности и SEO.
+
+## Скриншоты
+
+|                                                            Главная                                                            |                                                              Проекты                                                              |                                                             Проект                                                              |
+| :---------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
+| ![Главная](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/home.png) | ![Проекты](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/projects.png) | ![Проект](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/project.png) |
+
+|                                                              Обо мне                                                              |                                                              Контакты                                                              |                                                           404                                                            |
+| :-------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| ![Обо мне](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/about-me.png) | ![Контакты](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/contacts.png) | ![404](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/404.png) |
+
+|                                                            Главная (Светлая тема)                                                             |
+| :-------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![Главная (Светлая тема)](https://github.com/dag0S/portfolio-gosudarev-danila-2.0/blob/master/public/images/projects/portfolio-2.0/light.png) |
+
+---
+
+## Установка и запуск
 
 ```bash
+# Клонировать репозиторий
+git clone https://github.com/dag0S/portfolio-gosudarev-danila-2.0.git
+cd portfolio-gosudarev-danila-2.0
+
+# Устанавить зависимости
+npm install
+
+# Запуск в DEV моде
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Сборка проекта
+npm run build
+
+# Запуск в PRODUCTION моде
+npm run start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

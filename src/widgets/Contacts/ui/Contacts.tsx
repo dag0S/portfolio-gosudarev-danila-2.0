@@ -31,6 +31,16 @@ export const Contacts: FC = () => {
             </a>
           </li>
           <li>
+            VK —{" "}
+            <a
+              href={SOCIALS.vk}
+              target="_blank"
+              className="text-primary hover:opacity-75 hover:underline"
+            >
+              Даня Государев
+            </a>
+          </li>
+          <li>
             Email —{" "}
             <a
               href={`mailto:${SOCIALS.email}`}

@@ -205,6 +205,39 @@ export const PROJECTS: IProject[] = [
   },
   {
     id: 5,
+    title: "Портфолио 2.0",
+    description:
+      "Вторая версия моего сайта-портфолио, выполненная на NextJS, React, TypeScript и Framer Motion. На сайте вы можете детально ознакомиться с проектами, с которыми я работал.",
+    functional: [
+      "Анимация появления секций и объектов на страницах;",
+      "Просмотр и фильтрация данных;",
+      "Оригинальный дизайн;",
+      "Адаптивная верстка под мобильные устройства.",
+    ],
+    imagesURL: [
+      "/images/projects/portfolio-2.0/home.png",
+      "/images/projects/portfolio-2.0/projects.png",
+      "/images/projects/portfolio-2.0/project.png",
+      "/images/projects/portfolio-2.0/about-me.png",
+      "/images/projects/portfolio-2.0/contacts.png",
+      "/images/projects/portfolio-2.0/404.png",
+      "/images/projects/portfolio-2.0/light.png",
+    ],
+    tags: [
+      "NextJS",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "shadcn",
+      "Framer Motion",
+      "ESLint",
+      "Prettier",
+    ],
+    linkFrontendCode: "https://github.com/dag0S/portfolio-gosudarev-danila-2.0",
+    linkLiveDemo: "https://gosudarev-danila.netlify.app/",
+  },
+  {
+    id: 6,
     title: "Портфолио 1.0",
     description:
       "Мой первый сайт портфолио, в котором были собраны все мои проекты, над которыми я работал. Сайт написан на React и анимирован с помощью Framer Motion.",
@@ -237,7 +270,7 @@ export const PROJECTS: IProject[] = [
     linkLiveDemo: "https://gosudarev-danila.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Tech Wace (Магазин техники)",
     description:
       "Tech Wave интернет-магазин техники, с возможностью авториции, добавления товара в избранное и корзину, фильтрации по категориям, брендам и цене. Реализована смена темы и языка (Русский/English). В качестве сервера используется JSON-sever.",
@@ -276,7 +309,7 @@ export const PROJECTS: IProject[] = [
     linkFrontendCode: "https://github.com/dag0S/tech_wave_frontend",
   },
   {
-    id: 7,
+    id: 8,
     title: "TASK-1 SPA",
     description:
       "Приложение для отображения и взаимодействия с данными из JSONPlaceholder, реализованное с использованием современных технологий фронтенда. Пользователь может просматривать пользователей, посты, альбомы с фотографиями, а также осуществлять поиск и переключение тем.",
@@ -311,7 +344,7 @@ export const PROJECTS: IProject[] = [
     linkFrontendCode: "https://github.com/dag0S/tech_wave_frontend",
   },
   {
-    id: 8,
+    id: 9,
     title: "Voice Tag Lab",
     description:
       "Войс тэг - это незаменимая вещь для каждого битмейкера. И наша команда готова изготовить его именно для тебя. Выбирай любой из наших голосов, и выделяйся!",
@@ -326,7 +359,7 @@ export const PROJECTS: IProject[] = [
     linkLiveDemo: "https://warm-seahorse-f0148f.netlify.app/",
   },
   {
-    id: 9,
+    id: 10,
     title: "Lamborghini",
     description:
       "Итальянская компания, производитель спортивных автомобилей под маркой Lamborghini. Данный лендинг информирует о гранд-финале гонок.",
@@ -340,7 +373,7 @@ export const PROJECTS: IProject[] = [
     linkLiveDemo: "https://lamborghini-demo.netlify.app/",
   },
   {
-    id: 10,
+    id: 11,
     title: "Oculus",
     description:
       "Oculus - это очки виртуальной реальности будущего. Данный страница рекламирует данный продукт.",
@@ -354,7 +387,7 @@ export const PROJECTS: IProject[] = [
     linkLiveDemo: "https://oculus-demo-1-0-1.netlify.app/",
   },
   {
-    id: 11,
+    id: 12,
     title: "HooBank",
     description:
       "HooBank – инновационный банк. На этом лендинге мы рассказываем о возможностях и фичах этого банка. Сайт создан с использованием React и библиотеки стилей Tailwind.",
@@ -368,7 +401,7 @@ export const PROJECTS: IProject[] = [
     linkLiveDemo: "https://genuine-griffin-680248.netlify.app/",
   },
   {
-    id: 12,
+    id: 13,
     title: "LoftHouse",
     description:
       "LoftHouse – это жилой комплекс, расположенный в историческом центре города. Данный одностраничный сайт призван познакомить вас со всеми преимуществами этого места.",
@@ -382,7 +415,7 @@ export const PROJECTS: IProject[] = [
     linkLiveDemo: "https://loft-house-demo.netlify.app/",
   },
   {
-    id: 13,
+    id: 14,
     title: "D&M Leasing",
     description:
       "D&M Leasing – сайт по приобретению автомобилей, который состоит из нескольких страниц, написанных на чистом HTML и CSS.",
