@@ -14,7 +14,7 @@ interface Props {
 export const ProjectDetails: FC<Props> = ({ project }) => {
   return (
     <Container variant="md" className="mb-6 pt-2">
-      <ProjectNavigation />
+      <ProjectNavigation projectId={project.id} />
       <Slider project={project} />
       <div className="flex flex-col justify-between gap-2 sm:flex-row mb-6">
         <div>

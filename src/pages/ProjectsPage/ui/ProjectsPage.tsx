@@ -29,7 +29,7 @@ const ProjectsPage: FC<{
     : PROJECTS;
 
   return (
-    <Container className="text-center pt-12">
+    <Container className="text-center pt-6 md:pt-12">
       <ProjectsHead className="mb-6" />
       <Suspense fallback={<div className="h-[700px] w-[200px] bg-amber-400" />}>
         <ProjectList projects={filteredProjects} className="mb-6" />

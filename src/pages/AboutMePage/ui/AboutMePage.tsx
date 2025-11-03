@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 const AboutMePage: FC = () => {
   return (
-    <SectionWithAnimation>
-      <Container className="pt-12">
+    <SectionWithAnimation className="mb-4">
+      <Container className="pt-6 md:pt-12">
         <Title className="text-center mb-4">Обо мне</Title>
         <Text>
           Меня зовут <span className="font-bold">Данила Государев</span>, я
