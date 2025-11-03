@@ -234,7 +234,7 @@ export const PROJECTS: IProject[] = [
       "Prettier",
     ],
     linkFrontendCode: "https://github.com/dag0S/portfolio-gosudarev-danila-2.0",
-    linkLiveDemo: "https://gosudarev-danila.netlify.app/",
+    linkLiveDemo: "https://danila-gosudarev.netlify.app/",
   },
   {
     id: 6,
