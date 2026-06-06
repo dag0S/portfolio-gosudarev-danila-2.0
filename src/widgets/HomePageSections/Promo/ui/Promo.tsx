@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import { Button, cn } from "@/src/shared/lib/shadcn";
 import { Container, SectionWithAnimation } from "@/src/shared/ui";
+import Link from "next/link";
+import { ROUTES } from "@/src/shared/const";
 
 interface Props {
   className?: string;
@@ -24,9 +26,11 @@ export const Promo: FC<Props> = ({ className }) => {
             -разработчик, создаю современные и удобные веб-приложения на React,
             NextJS, NestJS, TypeScript и другие.
           </h2>
-          <Button size="lg" className="font-bold">
-            СВЯЗАТЬСЯ
-          </Button>
+          <Link href={ROUTES.contacts}>
+            <Button size="lg" className="font-bold">
+              СВЯЗАТЬСЯ
+            </Button>
+          </Link>
         </div>
         <Image
           src="/images/hero.png"
